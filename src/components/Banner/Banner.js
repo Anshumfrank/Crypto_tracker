@@ -33,16 +33,7 @@ function Banner() {
     <div className={classes.banner}>
       <Container className={classes.bannerContent}>
         <div className={classes.tagline}>
-          <Typography
-            variant="h2"
-            style={{
-              fontWeight: "bold",
-              marginBottom: 15,
-              fontFamily: "Montserrat",
-            }}
-          >
-            Crypto Hunter
-          </Typography>
+          
           <Typography
             variant="subtitle2"
             style={{
@@ -51,7 +42,17 @@ function Banner() {
               fontFamily: "Montserrat",
             }}
           >
-            Get all the Info regarding your favorite Crypto Currency
+            Ready To Ride The Waves Of The Market?
+          </Typography>
+          <Typography
+            variant="h2"
+            style={{
+              fontWeight: "bold",
+              marginBottom: 15,
+              fontFamily: "Montserrat",
+            }}
+          >
+            Crypto Pyrates
           </Typography>
         </div>
         <Carousel />
