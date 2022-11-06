@@ -1,21 +1,18 @@
 import {
   AppBar,
   Container,
-  Toolbar,
   Typography,
 } from "@material-ui/core";
 
 import {
-  createTheme,
   makeStyles,
-  ThemeProvider,
 } from "@material-ui/core/styles";
 import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     tagline: {
     display: "flex",
-    height: "40%",
+    height: "60%",
     flexDirection: "column",
     justifyContent: "center",
     textAlign: "center",
@@ -33,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
 
 function Footer() {
   const classes = useStyles();
-  const history = useHistory();
   return (
   
      <AppBar color="transparent" position="static">
@@ -43,9 +39,13 @@ function Footer() {
             <Typography
               variant="h6"
               className={classes.title}
+               onClick={() => window.scrollTo(0,0)}
             >
               Crypto Pyrates
             </Typography>
+              <button type="button" className="toTop" onClick={() => window.scrollTo(0,0)}>
+              Up The Wave 🏴‍☠️
+              </button>
               <Typography
               className={classes.tagline}
             variant="subtitle2"
@@ -54,9 +54,8 @@ function Footer() {
               textTransform: "capitalize",
               fontFamily: "Montserrat",
             }}
-          >
-            Jain ki kripa
-            
+           >
+            Riding Waves Since 2022
           </Typography>
             
           </ div>
