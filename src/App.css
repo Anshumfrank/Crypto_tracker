@@ -11,3 +11,8 @@ a {
   text-decoration: none;
   color: gold;
 }
+ .foot {
+   background-color: red;
+   border: 5px solid red;
+   border-radius: 5px;
+ }
