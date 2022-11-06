@@ -59,6 +59,9 @@ const Carousel = () => {
             style={{
               color: profit > 0 ? "rgb(14, 203, 129)" : "red",
               fontWeight: 500,
+              backgroundColor: "black",
+              border: "1px solid black",
+              borderRadius: "20px",
             }}
           >
             {profit && "+"}
