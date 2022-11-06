@@ -51,6 +51,9 @@ function Header() {
             >
               Crypto Pyrates
             </Typography>
+            <button type="button" className="toBt" onClick={() => window.scrollTo(1500,1500)}>
+              Down The Wave ⚓
+              </button>
             {/* <Button color="inherit">Login</Button> */}
             <Select
               variant="outlined"
