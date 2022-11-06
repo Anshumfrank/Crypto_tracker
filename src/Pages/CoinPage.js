@@ -46,6 +46,7 @@ const CoinPage = () => {
     },
     heading: {
       fontWeight: "bold",
+      color: "red",
       marginBottom: 20,
       fontFamily: "Montserrat",
     },
@@ -78,7 +79,7 @@ const CoinPage = () => {
 
   const classes = useStyles();
 
-  if (!coin) return <LinearProgress style={{ backgroundColor: "gold" }} />;
+  if (!coin) return <LinearProgress style={{ backgroundColor: "red" }} />;
 
   return (
     <div className={classes.container}>
